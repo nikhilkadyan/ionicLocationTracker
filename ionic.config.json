@@ -1,0 +1,8 @@
+{
+  "name": "tracker",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular",
+  "id": "8f1f448b"
+}
