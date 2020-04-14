@@ -5,9 +5,13 @@
 </ion-header>
 
 <ion-content class="ion-padding">
-  <ion-button shape="round" color="primary" (click)="start()">Start</ion-button>
-  <ion-button shape="round" color="danger" (click)="stop()">Stop</ion-button>
-  <ion-button shape="round" color="warning" (click)="reset()">Reset</ion-button> <br>
-  <ion-button shape="round" color="dark" (click)="getLocations()">Show Captured Locations</ion-button>
+  <ion-list>
+    <ion-item>Test</ion-item>
+  </ion-list>
+  <!-- <div #map id="map"></div> -->
+  <hr>
+  <ion-button shape="round" color="primary" (click)="start()" *ngIf="!tracking">Start</ion-button>
+  <ion-button shape="round" color="danger" (click)="stop()"  *ngIf="tracking">Stop</ion-button>
+  <ion-button shape="round" color="danger" (click)="clear()">Clear</ion-button>
 
 </ion-content>

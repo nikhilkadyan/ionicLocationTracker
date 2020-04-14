@@ -7,7 +7,7 @@ export class UserService {
     serial: string = "XXXXXXXXX";
     constructor(private platform: Platform, private device: Device) {
         this.platform.ready().then(() => {
-            this.serial = this.device.serial
+            this.serial = this.device.uuid
         })
     }
 }

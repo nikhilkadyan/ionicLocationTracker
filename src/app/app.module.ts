@@ -12,6 +12,7 @@ import { AppRoutingModule } from './app-routing.module';
 // Plugins
 import { BackgroundGeolocation } from '@ionic-native/background-geolocation/ngx';
 import { Device } from '@ionic-native/device/ngx';
+import { Geolocation } from '@ionic-native/geolocation/ngx';
 
 // Services
 import { TrackerService } from './services/tracker.service';
@@ -26,6 +27,7 @@ import { UserService } from './services/user.service';
     StatusBar,
     SplashScreen,
     BackgroundGeolocation,
+    Geolocation,
     Device,
     TrackerService,
     UserService,
